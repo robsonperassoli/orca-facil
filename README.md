@@ -1,4 +1,4 @@
-orca-facil
+Orça-Fácil
 ==========
 
-Realização de Pedidos através de serviços REST.
+Realização de Pedidos através de serviços REST com cliente Android.
