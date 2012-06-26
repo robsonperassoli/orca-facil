@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Fornecedor"
+        android:textAppearance="?android:attr/textAppearanceMedium" android:background="#eee" android:textColor="#000"/>
+
+    <TextView
+        android:id="@+id/txtNomeFornecedor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Fornecedor aqui"
+        android:textAppearance="?android:attr/textAppearanceMedium" android:layout_marginBottom="10px" android:textColor="#eee"/>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Produto"
+        android:textAppearance="?android:attr/textAppearanceMedium" android:background="#eee" android:textColor="#000"/>
+
+    <TextView
+        android:id="@+id/txtProduto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="produto aqui"
+        android:textAppearance="?android:attr/textAppearanceMedium" android:layout_marginBottom="10px" android:textColor="#eee"/>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Quantidade"
+        android:textAppearance="?android:attr/textAppearanceMedium" android:background="#eee" android:textColor="#000"/>
+
+    <TextView
+        android:id="@+id/txtQuantidade"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="10.2"
+        android:textAppearance="?android:attr/textAppearanceMedium" android:layout_marginBottom="10px" android:textColor="#eee"/>
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Unitário"
+        android:textAppearance="?android:attr/textAppearanceMedium" android:background="#eee" android:textColor="#000"/>
+
+    <TextView
+        android:id="@+id/txtUnitario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="120.9"
+        android:textAppearance="?android:attr/textAppearanceMedium" android:layout_marginBottom="10px" android:textColor="#eee"/>
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Valor de entrega"
+        android:textAppearance="?android:attr/textAppearanceMedium" android:background="#eee" android:textColor="#000"/>
+
+    <TextView
+        android:id="@+id/txtValorEntrega"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="30.0"
+        android:textAppearance="?android:attr/textAppearanceMedium" android:layout_marginBottom="10px" android:textColor="#eee"/>
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Total"
+        android:textAppearance="?android:attr/textAppearanceMedium" android:background="#eee" android:textColor="#000"/>
+
+    <TextView
+        android:id="@+id/txtTotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="139.0"
+        android:textAppearance="?android:attr/textAppearanceMedium" android:layout_marginBottom="10px" android:textColor="#eee"/>
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@+id/btPositivar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.43"
+            android:text="Positivar" />
+
+        <Button
+            android:id="@+id/btNegativar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.38"
+            android:text="Negativar" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btOk"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ok" android:drawableLeft="@drawable/ok"/>
+
+</LinearLayout>

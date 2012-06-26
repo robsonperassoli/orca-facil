@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Requisição" />
+
+    <TextView
+        android:id="@+id/txtRequisicao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1932658"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Data" />
+
+    <TextView
+        android:id="@+id/txtData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="20/01/2012"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#eee"
+        android:text="Itens deste Pedido"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#000" android:layout_marginTop="10px"/>
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/lvItensDoPedido"
+        android:layout_width="match_parent"
+        android:layout_height="330dp"
+        android:layout_weight="0.87" >
+    </ListView>
+
+    <Button
+        android:id="@+id/btFecharVisualizaPedido"
+        android:layout_width="match_parent"
+        android:layout_height="47dp"
+        android:drawableLeft="@drawable/ok"
+        android:text="Ok" />
+
+</LinearLayout>
