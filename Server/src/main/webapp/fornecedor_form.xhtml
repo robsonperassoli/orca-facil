@@ -1,0 +1,55 @@
+<ui:composition xmlns="http://www.w3.org/1999/xhtml" xmlns:f="http://java.sun.com/jsf/core"
+                xmlns:p="http://primefaces.org/ui" xmlns:h="http://java.sun.com/jsf/html"
+                xmlns:ui="http://java.sun.com/jsf/facelets" template="/template/main.xhtml">
+
+    <ui:define name="body">
+        <h:form>
+            <p:toolbar>
+                <p:toolbarGroup>
+                    <p:commandButton value="Novo" 
+                                     icon="ui-icon ui-icon-plusthick" 
+                                     action="fornecedor_form.jsf?faces-redirect=true" />
+                    <p:commandButton value="Salvar" 
+                                     icon="ui-icon ui-icon-disk" 
+                                     action="#{fornecedorMB.salvar()}" />
+                    <p:commandButton value="Gerar API Key" 
+                                     icon="ui-icon ui-icon-locked" 
+                                     action="#{fornecedorMB.fornecedor.generateApiKey()}" 
+                                     update="apiKey"/>
+                </p:toolbarGroup>
+            </p:toolbar>
+            <p:panel>
+                <h:panelGrid columns="2">
+                    <h:outputLabel value="ID" for="id"/>
+                    <h:outputText value="#{fornecedorMB.fornecedor.id}" id="id" />
+                    
+                    <h:outputLabel value="API Key" for="apiKey"/>
+                    <h:outputText value="#{fornecedorMB.fornecedor.apiKey}" id="apiKey" />
+                    
+                    <h:outputLabel value="Nome" for="nome"/>
+                    <p:inputText value="#{fornecedorMB.fornecedor.nome}" id="nome" size="60"/>
+                    
+                    <h:outputLabel value="E-mail" for="email" />
+                    <p:inputText value="#{fornecedorMB.fornecedor.email}" id="email" size="50"/>
+                    
+                    <h:outputLabel value="Senha" for="senha"/>
+                    <p:inputText value="#{fornecedorMB.fornecedor.senha}" id="senha" />
+                    
+                    <h:outputLabel value="Fone" for="fone"/>
+                    <p:inputMask mask="(99) 9999-9999" value="#{fornecedorMB.fornecedor.fone}" id="fone" />
+                    
+                    <h:outputLabel value="Rua" for="rua"/>
+                    <p:inputText value="#{fornecedorMB.fornecedor.rua}" id="rua" size="50"/>
+                                        
+                    <h:outputLabel value="Bairro" for="bairro"/>
+                    <p:inputText value="#{fornecedorMB.fornecedor.bairro}" id="bairro" size="40"/>
+                    
+                    <h:outputLabel value="Cep" for="cep"/>
+                    <p:inputMask mask="99999-999" value="#{fornecedorMB.fornecedor.cep}" id="cep" />
+                    
+                </h:panelGrid>
+            </p:panel>
+        </h:form>
+    </ui:define>
+
+</ui:composition>

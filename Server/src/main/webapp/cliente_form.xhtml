@@ -1,0 +1,55 @@
+<ui:composition xmlns="http://www.w3.org/1999/xhtml" xmlns:f="http://java.sun.com/jsf/core"
+                xmlns:p="http://primefaces.org/ui" xmlns:h="http://java.sun.com/jsf/html"
+                xmlns:ui="http://java.sun.com/jsf/facelets" template="/template/main.xhtml">
+
+    <ui:define name="body">
+        <h:form>
+            <p:toolbar>
+                <p:toolbarGroup>
+                    <p:commandButton value="Novo" 
+                                     icon="ui-icon ui-icon-plusthick" 
+                                     action="cliente_form.jsf?faces-redirect=true" />
+                    <p:commandButton value="Salvar" 
+                                     icon="ui-icon ui-icon-disk" 
+                                     action="#{clienteMB.salvar()}" />
+                    <p:commandButton value="Gerar API Key" 
+                                     icon="ui-icon ui-icon-locked" 
+                                     action="#{clienteMB.cliente.generateApiKey()}" 
+                                     update="apiKey"/>
+                </p:toolbarGroup>
+            </p:toolbar>
+            <p:panel>
+                <h:panelGrid columns="2">
+                    <h:outputLabel value="ID" for="id"/>
+                    <h:outputText value="#{clienteMB.cliente.id}" id="id" />
+                    
+                    <h:outputLabel value="API Key" for="apiKey"/>
+                    <h:outputText value="#{clienteMB.cliente.apiKey}" id="apiKey" />
+                    
+                    <h:outputLabel value="Nome" for="nome"/>
+                    <p:inputText value="#{clienteMB.cliente.nome}" id="nome" size="60"/>
+                    
+                    <h:outputLabel value="E-mail" for="email" />
+                    <p:inputText value="#{clienteMB.cliente.email}" id="email" size="50"/>
+                    
+                    <h:outputLabel value="Senha" for="senha"/>
+                    <p:inputText value="#{clienteMB.cliente.senha}" id="senha" />
+                    
+                    <h:outputLabel value="Fone" for="fone"/>
+                    <p:inputMask mask="(99) 9999-9999" value="#{clienteMB.cliente.fone}" id="fone" />
+                    
+                    <h:outputLabel value="Rua" for="rua"/>
+                    <p:inputText value="#{clienteMB.cliente.rua}" id="rua" size="50"/>
+                                        
+                    <h:outputLabel value="Bairro" for="bairro"/>
+                    <p:inputText value="#{clienteMB.cliente.bairro}" id="bairro" size="40"/>
+                    
+                    <h:outputLabel value="Cep" for="cep"/>
+                    <p:inputMask mask="99999-999" value="#{clienteMB.cliente.cep}" id="cep" />
+                    
+                </h:panelGrid>
+            </p:panel>
+        </h:form>
+    </ui:define>
+
+</ui:composition>

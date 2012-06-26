@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="src" path="gen"/>
+	<classpathentry kind="con" path="com.android.ide.eclipse.adt.ANDROID_FRAMEWORK"/>
+	<classpathentry kind="con" path="com.android.ide.eclipse.adt.LIBRARIES"/>
+	<classpathentry kind="lib" path="C:/Users/robson/.m2/repository/br/com/orcaFacil/integration-api/1.0.0/integration-api-1.0.0.jar"/>
+	<classpathentry kind="lib" path="D:/Recursos/Java/resteasy-mobile-1.0.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/robson/.m2/repository/commons-codec/commons-codec/1.3/commons-codec-1.3.jar"/>
+	<classpathentry kind="lib" path="C:/Users/robson/.m2/repository/commons-logging/commons-logging/1.1.1/commons-logging-1.1.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/robson/.m2/repository/org/apache/httpcomponents/httpclient/4.0.3/httpclient-4.0.3.jar"/>
+	<classpathentry kind="lib" path="C:/Users/robson/.m2/repository/org/apache/httpcomponents/httpcore/4.0.1/httpcore-4.0.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/robson/.m2/repository/org/codehaus/jackson/jackson-core-asl/1.6.3/jackson-core-asl-1.6.3.jar"/>
+	<classpathentry kind="lib" path="C:/Users/robson/.m2/repository/org/codehaus/jackson/jackson-jaxrs/1.6.3/jackson-jaxrs-1.6.3.jar"/>
+	<classpathentry kind="lib" path="C:/Users/robson/.m2/repository/org/codehaus/jackson/jackson-mapper-asl/1.6.3/jackson-mapper-asl-1.6.3.jar"/>
+	<classpathentry kind="lib" path="C:/Users/robson/.m2/repository/org/jboss/resteasy/jaxrs-api/2.2.1.GA/jaxrs-api-2.2.1.GA.jar"/>
+	<classpathentry kind="output" path="bin/classes"/>
+</classpath>
